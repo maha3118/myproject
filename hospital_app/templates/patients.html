@@ -1,0 +1,11 @@
+<h1>Patients Page</h1>
+
+{% for patient in patients %}
+
+<h3>{{ patient.name }}</h3>
+<p>{{ patient.age }}</p>
+<p>{{ patient.gender }}</p>
+
+<hr>
+
+{% endfor %}

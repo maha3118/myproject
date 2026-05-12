@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Services</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#f4f9ff;
+        }
+
+        /* Navbar */
+
+        .navbar{
+            background:white;
+            box-shadow:0 2px 15px rgba(0,0,0,0.08);
+            padding:15px 0;
+        }
+
+        .navbar-brand{
+            font-size:30px;
+            font-weight:700;
+            color:#0d6efd !important;
+        }
+
+        .nav-link{
+            color:#222 !important;
+            margin-left:20px;
+            font-weight:500;
+        }
+
+        .nav-link:hover{
+            color:#0d6efd !important;
+        }
+
+        /* Header */
+
+        .hero{
+            background:linear-gradient(135deg,#0d6efd,#4da3ff);
+            color:white;
+            text-align:center;
+            padding:90px 20px;
+        }
+
+        .hero h1{
+            font-size:55px;
+            font-weight:700;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-top:15px;
+        }
+
+        /* Service Cards */
+
+        .services{
+            padding:80px 0;
+        }
+
+        .service-card{
+            background:white;
+            border:none;
+            border-radius:25px;
+            padding:40px 30px;
+            text-align:center;
+            box-shadow:0 5px 20px rgba(0,0,0,0.08);
+            transition:0.4s;
+            height:100%;
+        }
+
+        .service-card:hover{
+            transform:translateY(-12px);
+        }
+
+        .service-card i{
+            font-size:60px;
+            color:#0d6efd;
+            margin-bottom:25px;
+        }
+
+        .service-card h3{
+            font-size:28px;
+            font-weight:700;
+            color:#0a2148;
+            margin-bottom:15px;
+        }
+
+        .service-card p{
+            color:#666;
+            font-size:16px;
+        }
+
+        .btn-service{
+            margin-top:20px;
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:12px 28px;
+            border-radius:40px;
+            text-decoration:none;
+            display:inline-block;
+            transition:0.3s;
+        }
+
+        .btn-service:hover{
+            background:#084298;
+            color:white;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#081b38;
+            color:white;
+            text-align:center;
+            padding:25px 0;
+            margin-top:50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            <i class="fa-solid fa-hospital"></i>
+            Medicare
+        </a>
+
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/doctors/">Doctors</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/services/">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/appointments/">Appointments</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <h1>Our Medical Services</h1>
+
+    <p>
+        Advanced healthcare solutions with expert doctors and modern technology.
+    </p>
+
+</section>
+
+<!-- Services -->
+
+<section class="services">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Cardiology -->
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <h3>Cardiology</h3>
+
+                    <p>
+                        Advanced heart care treatments with modern cardiac technology.
+                    </p>
+
+                    <a href="/appointments/" class="btn-service">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Neurology -->
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h3>Neurology</h3>
+
+                    <p>
+                        Expert brain and nervous system treatments by specialists.
+                    </p>
+
+                    <a href="/appointments/" class="btn-service">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Dental -->
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-tooth"></i>
+
+                    <h3>Dental Care</h3>
+
+                    <p>
+                        Complete dental treatments with advanced oral healthcare.
+                    </p>
+
+                    <a href="/appointments/" class="btn-service">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Orthopedics -->
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-bone"></i>
+
+                    <h3>Orthopedics</h3>
+
+                    <p>
+                        Bone and joint treatments with modern surgical care.
+                    </p>
+
+                    <a href="/appointments/" class="btn-service">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Emergency -->
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-truck-medical"></i>
+
+                    <h3>Emergency Care</h3>
+
+                    <p>
+                        24/7 emergency services with quick medical response teams.
+                    </p>
+
+                    <a href="/appointments/" class="btn-service">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- General -->
+
+            <div class="col-md-4">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-user-doctor"></i>
+
+                    <h3>General Medicine</h3>
+
+                    <p>
+                        Comprehensive healthcare and routine medical checkups.
+                    </p>
+
+                    <a href="/appointments/" class="btn-service">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Medicare Hospital | All Rights Reserved
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
